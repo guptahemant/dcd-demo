@@ -1,0 +1,16 @@
+uuid: d3f30b3d-101d-4e38-91e0-417e6cdcae57
+langcode: en
+status: false
+dependencies: {  }
+id: dcd_demo_multi
+label: 'dcd demo multi'
+description: 'Multisite split for dcd-demo-multi'
+folder: ../config/multisites/dcd_demo_multi
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.site
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

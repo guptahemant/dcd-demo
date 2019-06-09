@@ -1,0 +1,15 @@
+uuid: 062de649-8d0a-4edd-8e03-72611baf5e2f
+langcode: en
+status: false
+dependencies: {  }
+id: default
+label: Default
+description: 'Add a multisite split for the default site.'
+folder: ../config/multisites/default
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
