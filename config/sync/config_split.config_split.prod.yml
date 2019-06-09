@@ -1,0 +1,15 @@
+uuid: e824f1e9-a500-45e9-afe8-65138ffcf255
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: Prod
+description: 'Settings for Production'
+folder: ../config/envs/prod
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,0 +1,15 @@
+uuid: d8b9c003-fb7c-4104-9b43-303fb051aff9
+langcode: en
+status: false
+dependencies: {  }
+id: local
+label: local
+description: 'Settings to be set for local only.'
+folder: ../config/envs/local
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
