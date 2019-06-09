@@ -6,7 +6,8 @@ id: stage
 label: stage
 description: 'Settings for stage'
 folder: ../config/envs/stage
-module: {  }
+module:
+  shield: 0
 theme: {  }
 blacklist: {  }
 graylist: {  }
