@@ -1,0 +1,4 @@
+name: DCD demo custom
+description: 'A simple custom module.'
+type: module
+core: 8.x

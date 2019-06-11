@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\Core\Config\FileStorage;
+use Drupal\block\Entity\Block;
+
+/**
+ * Helper function to import config from yml file.
+ */
+function _dcd_demo_custom_import_config($config_name, $config_path = '') {
+  if ($config_path == '') {
+    // If config_path is empty, read config from sync directory.
+    $config_path = config_get_config_directory(CONFIG_SYNC_DIRECTORY);
+  }
+
+  $source = new FileStorage($config_path);
+  $config_storage = \Drupal::service('config.storage');
+  if ($data = $source->read($config_name)) {
+    $config_storage->write($config_name, $data);
+    return TRUE;
+  }
+  return FALSE;
+}
+
+/**
+ * Helper function to import a block config.
+ */
+function _dcd_demo_custom_import_block_config($block_id, $config_path = '') {
+  $block = Block::load($block_id);
+  if (_dcd_demo_custom_import_config('block.block.' . $block_id, $config_path)) {
+    if(empty($block)) {
+      $block = Block::load($block_id);
+      $block->save();
+    }
+  }
+}
+
